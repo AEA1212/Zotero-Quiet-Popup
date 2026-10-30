@@ -1,0 +1,31 @@
+<vbox id="zotero-prefpane-quiet-popup" onload="QuietPopup_Preferences.init()">
+	<groupbox>
+		<label><html:h2>Reader link previews</html:h2></label>
+		<description>
+			Controls the preview popups that appear when the pointer rests on a link,
+			citation or reference in a PDF, or on a footnote in an EPUB.
+		</description>
+
+		<radiogroup id="quiet-popup-mode" preference="extensions.zotero-quiet-popup.mode">
+			<radio value="modifier" label="Show only when hovering while holding a key"/>
+			<radio value="never" label="Never show on hover"/>
+			<radio value="always" label="Show on every hover (Zotero default)"/>
+		</radiogroup>
+
+		<hbox align="center" class="indented-pref">
+			<label value="Key:" control="quiet-popup-modifier"/>
+			<menulist id="quiet-popup-modifier" preference="extensions.zotero-quiet-popup.modifier" native="true">
+				<menupopup>
+					<menuitem value="ctrl" label="Ctrl"/>
+					<menuitem value="alt" label="Alt"/>
+					<menuitem value="shift" label="Shift"/>
+					<menuitem value="meta" label="Super / Cmd"/>
+				</menupopup>
+			</menulist>
+		</hbox>
+
+		<description>
+			With the keyboard, Tab to a link and press Enter to open its preview in any mode.
+		</description>
+	</groupbox>
+</vbox>

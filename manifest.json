@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Zotero Quiet Popup",
+	"version": "1.0.0",
+	"description": "Stops link and citation preview popups in the Zotero reader from opening on plain hover. Hold a modifier key (Ctrl by default) while hovering to show them.",
+	"icons": {
+		"48": "icon.svg",
+		"96": "icon.svg"
+	},
+	"applications": {
+		"zotero": {
+			"id": "zotero-quiet-popup@abdeldayem",
+			"update_url": "https://raw.githubusercontent.com/AEA1212/Zotero-Quiet-Popup/main/updates.json",
+			"strict_min_version": "7.0",
+			"strict_max_version": "10.*"
+		}
+	}
+}
